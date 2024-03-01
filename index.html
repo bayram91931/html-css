@@ -1,33 +1,61 @@
-
 <!DOCTYPE html>
-<!-- Eksempel på brug af DIV til at opdele en HTML-side i sektioner. CSS-filen style.css er tilknyttet til siden som eksternt stylesheet. -->
 
-<html>
+<html lang="en">
 
-  <head>
-    <title>DIV og CSS</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-  </head>
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name="description" content="Retro Café">
+        <meta name="keywords" content="cafe, basic web design, responsive">
+        <meta name="author" content="Retro Café">
+        
+        <title>Retro Café</title>
 
-  <body>
-    <div id="hoved"> <!--Rammen der dækker hele siden-->
-      <div id="top"><!--Rammen der er i toppen af siden-->
-        <p class="afsnit1">Dette er hjemmesidens topramme.</p>
-      </div>
-      <div id="menu"> <!--Rammen der er sidens venste side med menupunkter-->
-        <ul>
-                        <li class="current"><a href="index.html">T-shirt</a></li>
-                        <li><a href="menu.html">Bukser</a></li>
-                        <li><a href="about.html">Hoodies</a></li>
-                        <li><a href="services.html">Jakker</a></li>
-        </ul>
-      </div>
-      <div id="indhold"> <!--Rammen der er til højre med sidens indhold-->
-        <h1>Dette er en overskrift.</h1>
-        <p class="afsnit2">Dette er et tekstafsnit.</p>
-      </div>
-    </div>
-  </body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Smooch&family=The+Nautigal&display=swap" rel="stylesheet">
+
+        <link rel = "stylesheet" href="./css/style.css">
+        <link rel="icon" href="./images/logo.svg">
+        <script src="https://kit.fontawesome.com/502c09b2f8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <center><i class="fa-solid fa-mug-hot"></i></center>
+                    <h1>Retro Café</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Forside</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">Om Os</a></li>
+                        <li><a href="services.html">Events</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>  
+
+        <div class="clr"></div>
+
+        <section id="showcase">
+            <div class="container">
+                <h1>Retro Café</h1>
+                <p>Lyngby</p>
+                <br>
+                <h6>Bayram, Ajet , Cæsar og August<h6>
+            </div>
+        </section>
+
+          
+              
+
+        <footer>
+            <p>&copy; 2022 Retro Café</p>
+        </footer>
+    </body>
 
 </html>
