@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<!-- Eksempel på brug af DIV til at opdele en HTML-side i sektioner. CSS-filen style.css er tilknyttet til siden som eksternt stylesheet. -->
+
+<html>
+
+  <head>
+    <title>DIV og CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+
+  <body>
+    <div id="hoved"> <!--Rammen der dækker hele siden-->
+      <div id="top"><!--Rammen der er i toppen af siden-->
+        <p class="afsnit1">Dette er hjemmesidens topramme.</p>
+      </div>
+      <div id="menu"> <!--Rammen der er sidens venste side med menupunkter-->
+        <ul>
+          <li>Menupunkt 1<br><br>
+            <ul>
+              <li><a href="http://www.systime.dk"> Underpunkt 1</a></li><br>
+              <li>Underpunkt 2</li><br>
+            </ul>
+          </li>
+          <li>Menupunkt 2</li><br>
+          <li>Menupunkt 3</li>
+        </ul>
+      </div>
+      <div id="indhold"> <!--Rammen der er til højre med sidens indhold-->
+        <h1>Dette er en overskrift.</h1>
+        <p class="afsnit2">Dette er et tekstafsnit.</p>
+      </div>
+    </div>
+  </body>
+
+</html>
